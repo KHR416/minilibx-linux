@@ -21,7 +21,7 @@ Requirements for Linux
  - X11 include files (package xorg)
  - XShm extension must be present (package libxext-dev)
  - Utility functions from BSD systems - development files (package libbsd-dev)
- - **e.g. _sudo apt-get install gcc make xorg libxext-dev libbsd-dev_ (Debian/Ubuntu)**
+ - **e.g. _sudo apt install gcc make xorg libxext-dev libbsd-dev_ (Debian/Ubuntu)**
  
 Requirements for MacOS
  - [Xquartz](https://www.xquartz.org/)
@@ -44,12 +44,16 @@ Compile MinilibX
    test/mlx-test binary is also created.
 
 
-Install MinilibX
+Install MinilibX for Linux
 
- - no installation script is provided. You may want to install
-     - libmlx.a and/or libmlx_$(HOSTTYPE).a in /usr/X11/lib or /usr/local/lib
-     - mlx.h in /usr/X11/include or /usr/local/include
-     - man/man3/mlx*.1 in /usr/X11/man/man3 or /usr/local/man/man3
+ - Install  
+ ```bash
+ sudo make install
+ ```
+ - Uninstall  
+ ```bash
+ sudo make uninstall
+ ```
 
-
- Olivier CROUZET - 2014-01-06 -
+ Olivier CROUZET - 2014-01-06 -  
+ KHR416 - 2024-11-03 -
